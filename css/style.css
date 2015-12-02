@@ -1,0 +1,19 @@
+button, h3{
+position: absolute;
+top: 520px;
+font-size: 1.3em;
+padding: 7px;
+}
+
+h3{
+  font-size: 1.7em;
+  top: 540px;
+  font-family: arial;
+  font-weight: lighter;
+  color: teal;
+}
+
+#canvasImg, canvas {
+margin: 0 auto;
+border: 5px solid tomato; 
+}
