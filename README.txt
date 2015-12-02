@@ -1,1 +1,1 @@
-A rapid animation of various polygonal backgrounds - these can also be saved by the user.
+Randomly generated multi-color polygonal backgrounds that can be saved as desktop wallpaper etc.
