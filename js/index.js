@@ -63,7 +63,7 @@ if (canvas.getContext) {
     var ctx = canvas.getContext('2d');
     var left = true;
 
-    canvas.height = screen.height - 90;
+    canvas.height = screen.height - 80;
 	canvas.width = screen.width + 20;
     
     initialize();
