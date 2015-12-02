@@ -1,8 +1,33 @@
+body{
+  font-family: roboto, arial;
+  overflow: hidden;
+}
 button, h3{
 position: absolute;
 top: 520px;
 font-size: 1.3em;
 padding: 7px;
+}
+
+#topBar{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  z-index: 100;
+  font-size: 1.6em;
+  line-height: .7em;
+  text-align: center;
+  font-weight: lighter;
+}
+
+h4 > span{
+  text-decoration: underline;
+}
+h4 > span:hover{
+  cursor: pointer;
 }
 
 h3{
@@ -14,6 +39,7 @@ h3{
 }
 
 #canvasImg, canvas {
-margin: 0 auto;
-border: 5px solid tomato; 
+position: absolute;
+left: -10px;
+top: -10px;
 }
