@@ -2,16 +2,20 @@ var canvas = document.getElementById('canvas');
 var shapes = 5000;
 
 function initialize(){
+<<<<<<< HEAD
 }
 
 function drawShapes(){
     for (var i = 1; i <= shapes; i++) {
+=======
+    for (var i = 1; i <= 5000; i++) {
+>>>>>>> origin/master
         ctx.beginPath();
         if (left) {
-            ctx.moveTo(0, randomize(canvas.height + 10));
+            ctx.moveTo(-10, randomize(canvas.height + 10));
             left = false;
         } else {
-            ctx.moveTo(randomize(canvas.width+ 10), 0);
+            ctx.moveTo(randomize(canvas.width+ 10), -10);
             left = true;
         }
         ctx.lineTo(randomize(canvas.width + 50), randomize(canvas.height  + 50));
