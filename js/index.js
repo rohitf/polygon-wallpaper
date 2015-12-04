@@ -1,7 +1,11 @@
 var canvas = document.getElementById('canvas');
+var shapes = 5000;
 
 function initialize(){
-    for (var i = 1; i <= 1000; i++) {
+}
+
+function drawShapes(){
+    for (var i = 1; i <= shapes; i++) {
         ctx.beginPath();
         if (left) {
             ctx.moveTo(0, randomize(canvas.height + 10));
@@ -66,23 +70,9 @@ if (canvas.getContext) {
     canvas.height = screen.height - 60;
 	canvas.width = screen.width + 20;
     
-    initialize();
-    initialize();
+    drawShapes();
 
     var timer = setInterval(function () {
-        for (var i = 1; i <= 1000; i++) {
-            ctx.beginPath();
-            if (left) {
-                ctx.moveTo(0, randomize(canvas.height + 10));
-                left = false;
-            } else {
-                ctx.moveTo(randomize(canvas.width+ 10), 0);
-                left = true;
-            }
-            ctx.lineTo(randomize(canvas.width + 50), randomize(canvas.height  + 50));
-            ctx.lineTo(randomize(canvas.width + 50), randomize(canvas.height + 50));
-            ctx.fillStyle = getRndColor();
-            ctx.fill();
-        }
+        drawShapes();
     }, 5000);
 }
