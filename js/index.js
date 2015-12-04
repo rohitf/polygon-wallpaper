@@ -1,6 +1,6 @@
 var canvas = document.getElementById('canvas');
 var shapes = 5000;
-var ctx, left;
+var ctx, left, timer;
 
 $(function(){
     if (canvas.getContext) {
@@ -15,7 +15,7 @@ $(function(){
         drawShapes();
         drawShapes();
 
-        var timer = setInterval(function () {
+        timer = setInterval(function () {
             drawShapes();
         }, 5000);
     }
