@@ -11,6 +11,7 @@ $(function(){
     	canvas.width = screen.width + 20;
         
         drawShapes();
+        drawShapes();
 
         var timer = setInterval(function () {
             drawShapes();
