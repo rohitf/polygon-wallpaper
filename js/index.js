@@ -1,15 +1,25 @@
 var canvas = document.getElementById('canvas');
 var shapes = 5000;
+var ctx, left;
 
-function initialize(){
-<<<<<<< HEAD
-}
+$(function(){
+    if (canvas.getContext) {
+        ctx = canvas.getContext('2d');
+        left = true;
+
+        canvas.height = screen.height - 60;
+    	canvas.width = screen.width + 20;
+        
+        drawShapes();
+
+        var timer = setInterval(function () {
+            drawShapes();
+        }, 5000);
+    }
+});
 
 function drawShapes(){
     for (var i = 1; i <= shapes; i++) {
-=======
-    for (var i = 1; i <= 5000; i++) {
->>>>>>> origin/master
         ctx.beginPath();
         if (left) {
             ctx.moveTo(-10, randomize(canvas.height + 10));
@@ -39,7 +49,7 @@ function getRndColor() {
     var r = 255 * Math.random() | 0,
         g = 255 * Math.random() | 0,
         b = 255 * Math.random() | 0,
-        alpha = 0.05; //Math.random().toFixed(1);
+        alpha = 0.01;
     var final = 'rgba(' + r + ',' + g + ',' + b + ',' + alpha + ')';
     return final;
 }
@@ -66,17 +76,3 @@ $('#save').click(function () {
     // a.click();
     $('h4').text("Right click on the image to save a beautiful wallpaper!")
 });
-
-if (canvas.getContext) {
-    var ctx = canvas.getContext('2d');
-    var left = true;
-
-    canvas.height = screen.height - 60;
-	canvas.width = screen.width + 20;
-    
-    drawShapes();
-
-    var timer = setInterval(function () {
-        drawShapes();
-    }, 5000);
-}
