@@ -10,6 +10,8 @@ $(function(){
         canvas.height = screen.height - 60;
     	canvas.width = screen.width + 20;
         
+        //Try to cover all white spots
+        drawShapes();
         drawShapes();
         drawShapes();
 
@@ -23,10 +25,10 @@ function drawShapes(){
     for (var i = 1; i <= shapes; i++) {
         ctx.beginPath();
         if (left) {
-            ctx.moveTo(-10, randomize(canvas.height + 10));
+            ctx.moveTo(-10, randomize(canvas.height*2.5));
             left = false;
         } else {
-            ctx.moveTo(randomize(canvas.width+ 10), -10);
+            ctx.moveTo(randomize(canvas.width*2.5), -10);
             left = true;
         }
         ctx.lineTo(randomize(canvas.width + 50), randomize(canvas.height  + 50));
