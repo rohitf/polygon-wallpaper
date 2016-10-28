@@ -52,7 +52,7 @@ function getRndColor() {
     var r = 255 * Math.random() | 0,
         g = 255 * Math.random() | 0,
         b = 255 * Math.random() | 0,
-        alpha = 0.1;
+        alpha = 0.2;
     var final = 'rgba(' + r + ',' + g + ',' + b + ',' + alpha + ')';
     return final;
 }
