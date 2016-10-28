@@ -77,5 +77,5 @@ $('#save').click(function () {
     // document.body.appendChild(a);
     // console.log(a)
     // a.click();
-    $('h4').text("Right click on the image to save a beautiful wallpaper!")
+    $('h4').text("Right click on the image and save a beautiful wallpaper!")
 });
